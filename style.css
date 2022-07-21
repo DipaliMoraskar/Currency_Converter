@@ -4,24 +4,39 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(315deg, #0066ff, #00ffcc);
+    background: linear-gradient(315deg, #797b7e, #c9cfce);
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.big-container{
+    background: url("https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png");
+    padding: 10px 24px;
+    border-radius: 30px;
+    width: 500px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .container{
-    background-color: white;
+    background-color: rgb(247, 241, 244);
     padding: 10px 24px;
     border-radius: 20px;
     width: 490px;
+    height: 210px;
+    box-shadow: #797b7e;
 }
+
+/* 
 h1{
     color: #364547;
     margin-left: 72px;
     margin-bottom: 0.5em;
     font-family: sans-serif;
 }
+ */
 .container .box{
     width: 100%;
     display: flex;
@@ -30,37 +45,44 @@ h1{
     width: 100%;
 }
 select{
-    width: 95%;
+    width: 70%;
     height: 40px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     cursor: pointer;
-    background: #66ffcc;
+    background: transparent;
     outline: none;
-    color: black;
-    margin: 0.2em 0;
+    color: rgb(18, 38, 218);
+    margin: 0.6em 1rem;
     padding: 0 1em;
     border-radius: 10px;
     border: none;
 }
 input{
     width: 95%;
-    height: 40px;
-    font-size: 1em;
-    margin: 0.2em 0;
+    height: 50px;
+    font-size: 1.5em;
+    margin: 0.6em 0;
     border-radius: 10px;
-    border: none;
+    border: 2rem;
     background: #cccccc;
     outline: none;
     padding: o 1em;
 }
+.btnbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .btn{
-    width: 98%;
+    width: 50%;
     height: 40px;
-    background: #364547;
+    display: inline-block;
+    align-items: center;
+    background: rgb(75, 48, 231);
     color: white;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 0.5em 0;
 }
