@@ -2,8 +2,6 @@ const select = document.querySelectorAll(".currency");
 const btn = document.getElementById("btn");
 const input = document.getElementById("input");
 const result = document.getElementById("result");
-const currency1Select = document.getElementById("currency1"); 
-const currency2Select = document.getElementById("currency2"); 
 
 fetch("https://api.frankfurter.app/currencies")
 .then((data) => data.json())
@@ -39,13 +37,9 @@ function convert(currency1, currency2, value){
     result.value =val.rates[currency2]
  });
  }
+ function ClearFields() {
 
-currency1Select.addEventListener("change",() => {
-    input.value ="";
-    result.value ="";
-});
+    document.getElementById("input").value = "";
+    document.getElementById("result").value = "";
+}
 
-currency2Select.addEventListener("change",() => {
-    input.value ="";
-    result.value ="";
-});
